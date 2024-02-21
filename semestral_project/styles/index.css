@@ -1,6 +1,32 @@
-body {
-  background-color: #ff6050;
+.layout {
+  display: grid;
+  gap: 4px;
+  grid-template-rows: 40px 40px auto 60px 60px 40px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header' 'sidebar' 'main' 'footer';
+  height: 100vh;
 }
-h1 {
-  color: #00f;
+
+header {
+  grid-area: header;
+  background-color: #909090;
+  color: blue;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #909090;
+  color: blue;
+}
+
+main {
+  grid-area: main;
+  background-color: aqua;
+  color: black;
+}
+
+nav {
+  grid-area: sidebar;
+  background-color: blue;
+  color: aqua;
 }
