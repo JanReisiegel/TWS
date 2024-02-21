@@ -1,32 +1,30 @@
-.layout {
+body {
   display: grid;
-  gap: 4px;
-  grid-template-rows: 40px 40px auto 60px 60px 40px;
-  grid-template-columns: 1fr;
-  grid-template-areas: 'header' 'sidebar' 'main' 'footer';
-  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px auto auto auto auto;
+  grid-template-areas:
+    "header header header header header"
+    "lside mein main main rside"
+    "footer footer footer footer footer";
 }
 
 header {
   grid-area: header;
-  background-color: #909090;
-  color: blue;
+  background-color: #777;
 }
-
 footer {
   grid-area: footer;
-  background-color: #909090;
-  color: blue;
+  background-color: #777;
 }
-
+.lside {
+  grid-area: lside;
+  background-color: #fff;
+}
+.pside {
+  grid-area: rside;
+  background-color: #fff;
+}
 main {
   grid-area: main;
-  background-color: aqua;
-  color: black;
-}
-
-nav {
-  grid-area: sidebar;
-  background-color: blue;
-  color: aqua;
+  background-color: #fff;
 }
