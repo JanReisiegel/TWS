@@ -6,11 +6,13 @@ body {
   color: #ced6d6;
   font-size: 20px;
 }
+
 header {
   background-color: #0b1117e6;
   padding: 10px;
 }
-.navbar {
+
+nav.navbar {
   height: auto;
   vertical-align: baseline;
   box-sizing: border-box;
@@ -22,6 +24,7 @@ header {
 h1 {
   font-size: 30px;
 }
+
 .navigation {
   display: flex;
   align-self: center;
@@ -35,9 +38,11 @@ h1 {
   margin-left: 15px;
   text-transform: uppercase;
 }
+
 .icon {
   display: none;
 }
+
 .navbar-a {
   font-size: 14px;
   text-decoration: none;
@@ -48,39 +53,46 @@ h1 {
 ul {
   list-style: none;
 }
+
 footer {
   background-color: #0b1117e6;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
 }
+
 .footer {
   grid-column: 1;
   grid-row: 1;
   display: flex;
   flex-direction: column;
 }
+
 .pages {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .copyright {
   grid-row: 2;
   grid-column: 1;
   background-color: #05080a;
   text-align: center;
 }
+
 .social {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer-a {
   display: flex;
   text-decoration: none;
@@ -88,9 +100,11 @@ footer {
   color: inherit;
   cursor: pointer;
 }
+
 .footer-a:hover {
   text-decoration: underline;
 }
+
 .social-icon {
   display: block;
   background-repeat: no-repeat 50% 50%;
@@ -99,6 +113,7 @@ footer {
   width: 20px;
   height: 20px;
 }
+
 .social-text {
   margin-left: 18px;
   font-size: 16px;
@@ -107,32 +122,40 @@ footer {
   font-weight: 500;
   text-decoration: none;
 }
+
 .social-text:hover {
   text-decoration: underline;
 }
+
 .instagram-icon {
   background-image: url("../images/instagram.svg");
 }
+
 .facebook-icon {
   background-image: url("../images/facebook.svg");
 }
+
 .discord-icon {
   background-image: url("../images/discord.svg");
 }
-@media (min-width: 700px) and (max-width: 1200px) {
-  .navbar {
+
+@media screen and ((min-width: 700px) and (max-width: 1200px)) {
+  nav.navbar {
     flex-direction: row;
   }
+
   .navbar-a:hover {
     padding-bottom: 15px;
     border-bottom: solid 5px #f90;
     transition-property: inherit;
     transition-duration: 0.25s;
   }
+
   .this_page {
     padding-bottom: 15px;
     border-bottom: solid 5px #ff0;
   }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -145,15 +168,19 @@ footer {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
   }
+
   div.pages {
     grid-column: 1;
   }
+
   div.social {
     grid-column: 2;
   }
+
   div.contact {
     grid-column: 3;
   }
+
   .footer-a {
     display: flex;
     text-decoration: none;
@@ -161,6 +188,7 @@ footer {
     color: inherit;
     cursor: pointer;
   }
+
   .social-icon {
     display: block;
     background-repeat: no-repeat 50% 50%;
@@ -169,6 +197,7 @@ footer {
     width: 20px;
     height: 20px;
   }
+
   .social-text {
     position: relative;
     margin-left: 18px;
@@ -178,6 +207,7 @@ footer {
     font-weight: 500;
     text-decoration: none;
   }
+
   .social-text:hover {
     text-decoration: underline;
   }
@@ -193,15 +223,18 @@ footer {
     background-color: #05080a;
     text-align: center;
   }
+
   .copyright a {
     text-decoration: none;
     color: inherit;
   }
+
   .copyright a:hover {
     text-decoration: underline;
   }
 }
-@media (min-width: 1200px) {
+
+@media only screen and (min-width: 1200px) {
   body {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -237,6 +270,7 @@ footer {
     font-size: 20px;
     align-self: center;
   }
+
   .navigation {
     display: flex;
     align-self: center;
@@ -245,9 +279,11 @@ footer {
     flex-flow: row nowrap;
     max-width: 1290px;
   }
+
   ul {
     list-style: none;
   }
+
   .nav_item {
     position: relative;
     margin-left: 20px;
@@ -295,15 +331,19 @@ footer {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
   }
+
   div.pages {
     grid-column: 1;
   }
+
   div.social {
     grid-column: 2;
   }
+
   div.contact {
     grid-column: 3;
   }
+
   .footer-a {
     display: flex;
     text-decoration: none;
@@ -311,6 +351,7 @@ footer {
     color: inherit;
     cursor: pointer;
   }
+
   .social-icon {
     display: block;
     background-repeat: no-repeat 50% 50%;
@@ -319,6 +360,7 @@ footer {
     width: 20px;
     height: 20px;
   }
+
   .social-text {
     position: relative;
     margin-left: 18px;
@@ -328,6 +370,7 @@ footer {
     font-weight: 500;
     text-decoration: none;
   }
+
   .social-text:hover {
     text-decoration: underline;
   }
@@ -343,10 +386,12 @@ footer {
     background-color: #05080a;
     text-align: center;
   }
+
   .copyright a {
     text-decoration: none;
     color: inherit;
   }
+
   .copyright a:hover {
     text-decoration: underline;
   }
