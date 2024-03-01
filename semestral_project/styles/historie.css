@@ -38,6 +38,7 @@ figcaption {
 
 .gallery figure {
   position: relative;
+  margin: auto 0 auto 0;
 }
 
 .picture figcaption {
@@ -47,13 +48,34 @@ figcaption {
   padding: 5px;
 }
 
-@media (min-width: 720px) and (max-width: 960px) {
-  .pictures {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 700px) and (max-width: 1200px) {
+  .main-tema {
+    flex-direction: row;
   }
+  .main-tema .content-text {
+    flex-basis: 55%;
+    margin-right: 30px;
+  }
+  .main-tema .gallery {
+    flex-basis: 45%;
+  }
+}
 
-  .picture figcaption {
-    word-wrap: auto;
+@media (min-width: 1200px) {
+  .main-tema {
+    flex-direction: row;
+  }
+  .main-tema .content-text {
+    flex-basis: 55%;
+    margin-right: 30px;
+  }
+  .main-tema .gallery {
+    flex-basis: 45%;
+  }
+  .pictures > * {
+    min-width: 150px;
+    max-width: 300px;
+    flex-basis: 50%;
+    flex-grow: 1;
   }
 }
