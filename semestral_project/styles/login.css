@@ -1,0 +1,77 @@
+/*dopsat styly pro stránku form.html*/
+main {
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.card {
+  width: 400px;
+  height: 400px;
+  align-self: center;
+  perspective: 800px;
+}
+.login {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+fieldset {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+fieldset > input {
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  outline: none;
+  background-color: #05080a79;
+  border: none;
+  color: inherit;
+  transition: all 200ms linear;
+  box-shadow: 0 4px 8px 0 #15151533;
+}
+fieldset > label {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: right;
+  transition: all 200ms linear;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+.button {
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #ced6d6;
+  color: #0b1117e6;
+  border: none;
+}
+.button:hover {
+  background-color: #0b1117e6;
+  color: #ced6d6;
+}
