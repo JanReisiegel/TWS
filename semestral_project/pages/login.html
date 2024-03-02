@@ -7,6 +7,10 @@
     <link rel="icon" href="../images/fmTUL.svg" type="image/svg" />
     <link rel="stylesheet" href="../styles/main.css" type="text/css" />
     <link rel="stylesheet" href="../styles/login.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
     <script src="../scripts/form.js"></script>
     <title>SP | Dotazník</title>
   </head>
@@ -26,70 +30,113 @@
             <a href="./historie.html" class="navbar-a">Historie</a>
           </li>
           <li class="nav_item">
-            <a href="./login.html" class="navbar-a this_page">Dotaz</a>
+            <a href="./login.html?type=login" id="navLog" class="navbar-a"
+              >Přihlásit se</a
+            >
+          </li>
+          <li class="nav_item">
+            <a href="./login.html?type=signup" id="navSign" class="navbar-a">
+              Registrovat se
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h6>Log In</h6>
-      <h6>Sign Up</h6>
-      <input type="checkbox" name="form-type" id="form-type" />
-      <label for="form-type"></label>
+      <h3>
+        Přihlásit se
+        <label class="switch" for="form-type">
+          <input
+            type="checkbox"
+            name="form-type"
+            id="form-type"
+            class="checkbox"
+          />
+          <span class="slider"></span>
+        </label>
+        Registrovat se
+      </h3>
+
       <div class="card">
-        <form class="login">
-          <fieldset>
-            <input type="email" id="email" name="email" placeholder="Email" />
-            <label for="email">Email</label>
-          </fieldset>
-          <fieldset>
+        <div class="card-login" id="card-login">
+          <h3>Přihlášení</h3>
+          <form class="login">
+            <fieldset>
+              <input
+                type="email"
+                id="logEmail"
+                name="logEmail"
+                placeholder="Email"
+              />
+              <label for="logEmail" class="email icon"></label>
+            </fieldset>
+            <fieldset>
+              <input
+                type="password"
+                id="logPassword"
+                name="logPassword"
+                placeholder="Heslo"
+              />
+              <label for="logPassword" class="password icon"></label>
+            </fieldset>
             <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Heslo"
+              class="button"
+              id="loginButton"
+              type="button"
+              value="Login"
             />
-            <label for="password">Heslo</label>
-          </fieldset>
-          <input class="button" type="submit" value="Login" />
-          <p>
-            <a href="" onclick="">Zapomenuté heslo?</a>
-          </p>
-        </form>
-        <form class="signup">
-          <fieldset>
+            <p>
+              <a href="" onclick="">Zapomenuté heslo?</a>
+            </p>
+          </form>
+        </div>
+        <div class="card-signup" id="card-signup">
+          <form class="signup">
+            <h3>Registrace</h3>
+            <fieldset>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Celé jméno"
+              />
+              <label for="fullName" class="user icon"></label>
+            </fieldset>
+            <fieldset>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Telefonní číslo"
+              />
+              <label for="phoneNumber" class="phone icon"></label>
+            </fieldset>
+            <fieldset>
+              <input
+                type="email"
+                id="signEmail"
+                name="signEmail"
+                placeholder="Email"
+              />
+              <label for="signEmail" class="email icon"></label>
+            </fieldset>
+            <fieldset>
+              <input
+                type="password"
+                id="signPassword"
+                name="signPassword"
+                placeholder="Heslo"
+              />
+              <label for="signPassword" class="password icon"></label>
+            </fieldset>
             <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              placeholder="Celé jméno"
+              class="button"
+              id="signupButton"
+              type="button"
+              value="Register"
             />
-            <label for="fullName">Celé jméno</label>
-          </fieldset>
-          <fieldset>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              placeholder="Telefonní číslo"
-            />
-            <label for="phoneNumber">Telefonní číslo</label>
-          </fieldset>
-          <fieldset>
-            <input type="email" id="email" name="email" placeholder="Email" />
-            <label for="email">Email</label>
-          </fieldset>
-          <fieldset>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Heslo"
-            />
-            <label for="password">Heslo</label>
-          </fieldset>
-          <input type="submit" value="Register" />
-        </form>
+          </form>
+        </div>
       </div>
     </main>
     <footer>
@@ -132,6 +179,12 @@
         <div class="contact">
           <strong>Kontakt</strong>
         </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2018 - 2024 Jan Reisiegel |
+          <a href="jan.reisiegel.eu/about-me/">jan.reisiegel.eu</a>
+        </p>
       </div>
     </footer>
   </body>
