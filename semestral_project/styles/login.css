@@ -30,7 +30,6 @@ main {
   top: 50%;
   left: 0;
   transform: translate3d(0, -50%, 35px) perspective(100px);
-  display: block;
 }
 form.login {
   display: block;
@@ -47,7 +46,6 @@ form.login {
   top: 50%;
   left: 0;
   transform: translate3d(0, -50%, 35px) perspective(100px);
-  display: block;
 }
 form.signup {
   display: block;

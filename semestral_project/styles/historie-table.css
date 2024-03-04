@@ -1,0 +1,81 @@
+.table {
+  display: block;
+  overflow-x: auto;
+}
+.table-name {
+  text-align: left;
+}
+table.design-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px groove #ced6d6;
+}
+.design-table td,
+.design-table th {
+  padding: 0.2rem;
+}
+
+.design-table tr > * {
+  text-align: center;
+}
+
+.design-table tbody,
+.design-table thead,
+th {
+  border-style: groove;
+  border-color: #ced6d6;
+  border-width: 3px;
+}
+.design-table tbody td {
+  border-style: ridge;
+  border-width: 1px;
+  border-color: #ced6d6;
+}
+.design-table thead th {
+  background-color: #0b1117e6;
+}
+.design-table thead td {
+  border-style: groove;
+  border-width: 1px;
+  border-color: #ced6d6;
+  font-weight: 700;
+}
+.animals td {
+  background-color: #121a22;
+}
+.hadaikum {
+  background-color: purple;
+}
+.archaikum {
+  background-color: #ac838a;
+}
+.proterozoikum {
+  background-color: #b80000;
+}
+.paleozoikum {
+  background-color: #005a00;
+}
+.mezozoikum {
+  background-color: #007e7e;
+}
+.kenozoikum {
+  background-color: #b4b400;
+}
+.animals .aves {
+  background-color: yellowgreen;
+  color: #0b1117e6;
+}
+.animals .dino {
+  background-color: cyan;
+  color: #0b1117e6;
+}
+.animals .mamm {
+  background-color: gold;
+  color: #0b1117e6;
+}
+@media (min-width: 2650px) {
+  .table-name {
+    text-align: center;
+  }
+}

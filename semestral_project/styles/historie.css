@@ -1,3 +1,8 @@
+main *,
+main ::after,
+main ::before {
+  box-sizing: border-box;
+}
 .side-menu {
   display: none;
 }
@@ -30,7 +35,7 @@ figcaption {
 }
 
 .pictures {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -62,8 +67,14 @@ figcaption {
 }
 
 @media (min-width: 1200px) {
-  .main-tema {
+  .middle-content {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-tema {
+    flex-basis: 80%;
+    flex-direction: row;
+    flex-shrink: 2;
   }
   .main-tema .content-text {
     flex-basis: 55%;
@@ -73,9 +84,24 @@ figcaption {
     flex-basis: 45%;
   }
   .pictures > * {
+    flex-direction: row;
     min-width: 150px;
     max-width: 300px;
     flex-basis: 50%;
     flex-grow: 1;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    box-sizing: border-box;
+  }
+  article > p {
+    text-align: justify;
+  }
+  article {
+    display: block;
+    box-sizing: border-box;
   }
 }

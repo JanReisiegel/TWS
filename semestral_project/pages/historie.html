@@ -7,6 +7,11 @@
     <link rel="icon" href="../images/fmTUL.svg" type="image/svg" />
     <link rel="stylesheet" href="../styles/main.css" type="text/css" />
     <link rel="stylesheet" href="../styles/historie.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../styles/historie-table.css"
+      type="text/css"
+    />
     <title>SP | Historie</title>
   </head>
 
@@ -19,7 +24,7 @@
             <a href="../index.html" class="navbar-a">Home</a>
           </li>
           <li class="nav_item">
-            <a href="./galerie.html" class="navbar-a">Galerie</a>
+            <a href="./unitedStates.html" class="navbar-a">USA</a>
           </li>
           <li class="nav_item">
             <a href="./historie.html" class="navbar-a this_page">Historie</a>
@@ -28,11 +33,7 @@
             <a href="./login.html?type=login" class="navbar-a">Přihlásit se</a>
           </li>
           <li class="nav_item">
-            <a
-              href="./login.html?type=signup"
-              id="navSign"
-              class="navbar-a"
-            >
+            <a href="./login.html?type=signup" id="navSign" class="navbar-a">
               Registrovat se
             </a>
           </li>
@@ -42,6 +43,22 @@
     <main class="middle-content">
       <nav class="side-menu">
         <h2>Menu</h2>
+        <ul>
+          <li><a href="#hadaikum">Hadaikum</a></li>
+          <li><a href="#archaikum">Archaikum</a></li>
+          <li><a href="#proterozoikum">Proterozoikum</a></li>
+          <li><a href="#paleozoikum">Paleozoikum</a></li>
+          <li><a href="#mezozoikum">Mezozoikum</a></li>
+          <li><a href="#kenozoikum">Kenozoikum</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li>
+            <a href="#more">Doplnění</a>
+            <ul>
+              <li><a href="#eon">Eon</a></li>
+              <li><a href="#prubeh">Průběh ér</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
       <div class="main-tema">
         <div class="content-text">
@@ -135,7 +152,7 @@
           </section>
         </div>
         <aside class="gallery">
-          <h2>Galerie</h2>
+          <h2 id="gallery">Galerie</h2>
           <div class="pictures">
             <figure class="picture">
               <img src="../images/hadaikum.png" alt="Vznik Země" />
@@ -176,9 +193,9 @@
         </aside>
       </div>
       <aside>
-        <h2 id="doplneni">Doplnění</h2>
+        <h2 id="more">Doplnění</h2>
         <article>
-          <h3>Eon</h3>
+          <h3 id="eon">Eon</h3>
           <p>
             Eon je nejvyšší geochronologická jednotka v geologické historii
             Země. Ve chronostratigrafii mu odpovídá eonotém (mezinárodně
@@ -198,6 +215,103 @@
             chronostratigraficky pomocí GSSP, ostatní eonotémy jsou datované
             absolutně.
           </p>
+        </article>
+        <article>
+          <h3 id="prubeh">Průběh geologických ér a skupiny živočichů</h3>
+          <div class="table">
+            <table class="design-table">
+              <caption class="table-name">
+                Průběh geologických ér
+              </caption>
+              <colgroup class="prvni">
+                <col />
+                <col />
+              </colgroup>
+              <col class="hadaikum" />
+              <col class="archaikum" />
+              <col class="proterozoikum" />
+              <colgroup class="paleozoikum">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <colgroup class="mezozoikum">
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <colgroup class="kenozoikum">
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="2" rowspan="2">Název</th>
+                  <td rowspan="2">Hadaikum</td>
+                  <td rowspan="2">Archaikum</td>
+                  <td rowspan="2">Proterozoikum</td>
+                  <td colspan="6">Paleozoikum</td>
+                  <td colspan="3">Mezozoikum</td>
+                  <td colspan="3">Kenozoikum</td>
+                </tr>
+                <tr>
+                  <td>Kambrium</td>
+                  <td>Ordovik</td>
+                  <td>Silur</td>
+                  <td>Devon</td>
+                  <td>Karbon</td>
+                  <td>Perm</td>
+                  <td>Trias</td>
+                  <td>Jura</td>
+                  <td>Křída</td>
+                  <td>Paleogén</td>
+                  <td>Neogén</td>
+                  <td>Kvartér</td>
+                </tr>
+                <tr>
+                  <th colspan="2">Miliony let</th>
+                  <td>4600-4000</td>
+                  <td>4000-2500</td>
+                  <td>2500-541</td>
+                  <td>541-485</td>
+                  <td>485-443</td>
+                  <td>443-419</td>
+                  <td>419-359</td>
+                  <td>359-299</td>
+                  <td>299-252</td>
+                  <td>252-201</td>
+                  <td>201-145</td>
+                  <td>145-66</td>
+                  <td>66-23</td>
+                  <td>23-3</td>
+                  <td>3-0</td>
+                </tr>
+              </thead>
+              <tbody class="animals">
+                <tr>
+                  <th rowspan="3">Existující skupiny živočichů</th>
+                  <th>Ptáci</th>
+                  <td colspan="10"></td>
+                  <td colspan="5" class="aves">Aves</td>
+                </tr>
+                <tr>
+                  <th>Dinosauři</th>
+                  <td colspan="9"></td>
+                  <td colspan="3" class="dino">Dinosauria</td>
+                  <td colspan="3"></td>
+                </tr>
+                <tr>
+                  <th>Savci</th>
+                  <td colspan="10"></td>
+                  <td colspan="5" class="mamm">Mammalia</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </article>
       </aside>
     </main>
