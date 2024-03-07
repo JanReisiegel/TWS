@@ -1,4 +1,6 @@
 var urlParams = new URLSearchParams(window.location.search);
+//import crypto-js pro hashování hesel
+//import * as CryptoJS from "crypto-js";
 window.addEventListener("DOMContentLoaded", () => {
   let type = urlParams.get("type");
   let checkbox = document.getElementById("form-type");
@@ -62,22 +64,31 @@ class Form {
   logIn = () => {
     let email = document.getElementById("logEmail").value;
     let password = document.getElementById("logPassword").value;
-    alert("email:\t" + email + "\nheslo:\t" + password);
+    let hashedPassword = btoa(password);
+    let userInformation = {
+      email: email,
+      password: hashedPassword,
+    };
+    console.log(userInformation);
   };
   signUp = () => {
     let email = document.getElementById("signEmail").value;
     let password = document.getElementById("signPassword").value;
     let fullName = document.getElementById("fullName").value;
     let phoneNumber = document.getElementById("phoneNumber").value;
-    alert(
-      "email:\t" +
-        email +
-        "\nheslo:\t" +
-        password +
-        "\nphone number:\t" +
-        phoneNumber +
-        "\nfull name:\t" +
-        fullName
-    );
+    let hashedPassword = btoa(password);
+    let userInformation = {
+      email: email,
+      password: hashedPassword,
+      fullName: fullName,
+      phoneNumber: phoneNumber,
+    };
+    console.log(userInformation);
   };
+  createCookie = (usermail) => {
+    var date = new Date();
+    date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
+    var expires = "; expires=" + date.toGMTString();
+    document.cookie = "usermail=" + usermail + expires + "; path=/";
+  }
 }
