@@ -23,14 +23,6 @@ td {
   border-color: #ced6d6;
   border-width: 1px;
 }
-<<<<<<< HEAD
-=======
-
-tr:first-child {
-  background-color: #0000ff40;
-}
->>>>>>> 3478083097dc0e82c34a7ebb0a7bb1a389ee2604
-
 tr:nth-child(even) {
   background-color: #0000ff40;
 }
@@ -41,31 +33,24 @@ tr:nth-child(odd) {
 thead > tr:first-child {
   background-color: #00ff0040;
 }
-<<<<<<< HEAD
-/*other styles*/
-=======
 
->>>>>>> 3478083097dc0e82c34a7ebb0a7bb1a389ee2604
+/*other styles*/
+
 main {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
 main * {
   padding: 0.5rem 0.2rem;
 }
-=======
-
->>>>>>> 3478083097dc0e82c34a7ebb0a7bb1a389ee2604
 section {
   display: flex;
   flex-direction: column;
 }
 
-section>p {
+section > p {
   text-align: justify;
 }
-<<<<<<< HEAD
 section > p {
   text-align: justify;
 }
@@ -162,9 +147,7 @@ main a:link {
     transition: all 0.5s ease-in-out;
   }
 }
-=======
 
-section>* {
+section > * {
   margin: 0 1rem;
 }
->>>>>>> 3478083097dc0e82c34a7ebb0a7bb1a389ee2604
