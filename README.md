@@ -14,8 +14,8 @@
   - [x] oddělené záhlaví, zápatí menu a obsah, vytvořené pomocí sémantických elementů HTML5
   - [x] menu vytvořené pomocí seznamu s příslušným stylem,
   - [x] odstavce a nadpisy 1 - 3 úrovně,
-  - [ ] číslovaný a nečíslovaný seznam (každý minimálně celkem 7 položek ve dvou úrovních),
-  - [ ] odkazy z textu obsahu a odkazy na fragment stránky,
+  - [x] číslovaný a nečíslovaný seznam (každý minimálně celkem 7 položek ve dvou úrovních),
+  - [x] odkazy z textu obsahu a odkazy na fragment stránky,
   - [x] minimálně 3 obrázky jako součást hlavního obsahu stránky,
   - [x] tabulku s popiskem a záhlavím, využívající spojování buněk v horizontálním i vertikálním směru,
   - [x] formulář obsahující minimálně 3 viditelné elementy, využívající fieldset, legend a label,

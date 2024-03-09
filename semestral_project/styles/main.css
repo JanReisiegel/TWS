@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #121a22;
   background-image: url(../images/background.png);
@@ -16,9 +19,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
   padding: auto;
   background-color: #0b1117e6;
-  padding: 10px;
 }
 .navbar {
   height: auto;
@@ -30,7 +33,7 @@ header {
 }
 
 h1 {
-  font-size: 30px;
+  text-align: center;
 }
 
 .navigation {
@@ -39,16 +42,22 @@ h1 {
   color: #ced6d6;
   text-decoration: none;
   flex-flow: row nowrap;
+  margin: 20px 0;
 }
 
 .nav_item {
+  font-size: inherit;
   cursor: pointer;
   margin-left: 15px;
   text-transform: uppercase;
 }
 
+#signup {
+  display: none;
+}
+
 .navbar-a {
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -148,6 +157,15 @@ footer {
 }
 
 @media screen and ((min-width: 700px) and (max-width: 1200px)) {
+  header {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  h1 {
+    font-size: inherit;
+    text-align: left;
+    margin: 20px 0;
+  }
   nav.navbar {
     flex-direction: row;
   }
@@ -241,12 +259,21 @@ footer {
     text-decoration: underline;
   }
 }
-
+@media (min-width: 900px) and (max-width: 1200px) {
+  #signup {
+    display: block;
+  }
+}
+@media (min-width: 1331px) {
+  #signup {
+    display: block;
+  }
+}
 @media (min-width: 1200px) {
   body {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 60px auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
       "header header header header header"
       "lside main main main rside"
@@ -270,8 +297,9 @@ footer {
   }
 
   h1 {
-    font-size: 20px;
-    align-self: left;
+    font-size: inherit;
+    text-align: left;
+    margin: 20px 0;
   }
 
   .navigation {
