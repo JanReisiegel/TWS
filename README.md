@@ -32,12 +32,12 @@
 
 ### Rozšíření
 
-- [X] HTML5 média (audio, video, figure, ...) (1 - 10 bodů)
-- [ ] HTML5 formuláře (nové atributy a typy) (1 - 10 bodů)
+- [x] HTML5 média (audio, video, figure, ...) (1 - 10 bodů)
+- [x] HTML5 formuláře (nové atributy a typy) (1 - 10 bodů)
 - [ ] Alternativní barevné schéma a rozložení CSS (1 - 10 bodů)
 - [ ] Pokročilé funkce CSS (generování obsahu, tiskový výstup apod.) (1 - 10 bodů)
-- [X] Rozšířené vlastnosti z CSS3 (animace, přechodové efekty, transformace, nové vlastnosti, vlastní fonty) (1 - 15 bodů)
-- [ ] Pokročilá responzivita CSS (širší škála podporovaných rozlišení, responzivní média, ...) (1 - 15 bodů)
-- [X] Využití vloženého SVG v HTML nebo CSS (1 - 5 bodů)
-- [X] Konfigurace serveru pomocí .htaccess (chybové stránky, přesměrování, heslo, omezení na základě IP adres) (1 - 10 bodů)
-- [X] Klientský JavaScript (přepínání CSS, geolokace, rozšířená validace formuláře, ...) (1 - 10 bodů)
+- [x] Rozšířené vlastnosti z CSS3 (animace, přechodové efekty, transformace, nové vlastnosti, vlastní fonty) (1 - 15 bodů)
+- [x] Pokročilá responzivita CSS (širší škála podporovaných rozlišení, responzivní média, ...) (1 - 15 bodů)
+- [x] Využití vloženého SVG v HTML nebo CSS (1 - 5 bodů)
+- [x] Konfigurace serveru pomocí .htaccess (chybové stránky, přesměrování, heslo, omezení na základě IP adres) (1 - 10 bodů)
+- [x] Klientský JavaScript (přepínání CSS, geolokace, rozšířená validace formuláře, ...) (1 - 10 bodů)
