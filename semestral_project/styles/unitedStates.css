@@ -95,13 +95,6 @@ section > figure > figcaption {
 .biggest-cities li {
   padding: 0.2rem;
 }
-main a:visited {
-  color: #868686;
-}
-main a:link {
-  text-decoration: none;
-  color: #00a8ad;
-}
 @media (min-width: 700px) and (max-width: 1200px) {
   .usa-best {
     display: inline-flex;
