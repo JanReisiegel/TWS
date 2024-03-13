@@ -42,22 +42,32 @@
       <h2>Menu</h2>
       <ul class="main-nav-list">
         <li>
-          <a href="./pages/historie.html" class="main-nav-a">Historie</a>
+          <a href="#intro" class="main-nav-a">Úvod</a>
         </li>
         <li>
-          <a href="./pages/unitedStates.html" class="main-nav-a">USA</a>
+          <a href="#about-me" class="main-nav-a">O mě</a>
+          <ul class="sub-nav-list">
+            <li>
+              <a href="#whoami" class="sub-nav-a">Kdo jsem</a>
+            </li>
+            <li>
+              <a href="#certificates" class="sub-nav-a">Certifikáty</a>
+            </li>
+            <li>
+              <a href="#sport" class="sub-nav-a">Sport</a>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="./pages/login.html?type=login" class="main-nav-a">Přihlásit se</a>
-        </li>
+          <a href="#video" class="main-nav-a">Video</a>
       </ul>
     </nav>
     <div class="content">
-      <section class="introduction">
+      <section class="introduction" id="intro">
         <h2>Úvod</h2>
         <p>
           Tento web je vytvořen jako semestrální projekt pro předmět
-          <i>Tworba webových stránek</i> na Technické
+          <em>Tvorba webových stránek</em> na Technické
           univerzitě v Liberci.
         </p>
         <p>
@@ -76,10 +86,10 @@
         </p>
       </section>
       <section class="about-me">
-        <h2>O mě</h2>
+        <h2 id="about-me">O mě</h2>
         <article class="whoami">
-          <h3>Kdo jsem?</h3>
-          <figure>
+          <h3 id="whoami">Kdo jsem?</h3>
+          <figure class="me">
             <img src="./images/me_400x400.jpg" alt="Jan Reisiegel - podzim 2018">
           </figure>
           <p>
@@ -93,8 +103,8 @@
           </p>
         </article>
         <article class="certificates">
-          <h3>Mé certifikáty</h3>
-          <figure>
+          <h3 id="certificates">Mé certifikáty</h3>
+          <figure class="certificate">
             <img src="./images/ccnav7in.png" alt="CCNAv7: Introduction to Networks">
           </figure>
           <p>
@@ -103,12 +113,12 @@
             certifikát za kurz <strong>CCNAv7: Introduction to Networks</strong>. Oba kurzy jsou od společnosti <a
               href="https://www.netacad.com/">CISCO</a>.
           </p>
-          <figure>
+          <figure class="certificate">
             <img src="./images/ccnav7srwe.png" alt="CCNAv7: Switching, Routing a Wireless Essentials">
           </figure>
         </article>
         <article class="sport">
-          <h3>Já a sport</h3>
+          <h3 id="sport">Já a sport</h3>
           <p>
             Od roku 2012 do roku 2021 jsem aktivně hrával soutěžní volejbal v
             <a href="https://www.slavia-volejbal.cz/">TJ Slavia Liberec</a>. Před pandemií COVID-19 jsem byl součástí
@@ -118,11 +128,23 @@
             trenérský kurz a obdržel trenérskou licenci třetí třídy. Nyní trénuji
             dvě kategorie dívek ve spolupráci s mým otcem.
           </p>
-          <figure>
+          <figure class="voleyball">
             <img src="./images/KPU16Z-CL.jpg" alt="Krajský přebor U16 ženy - Česká Lípa">
           </figure>
         </article>
       </section>
+      </section>
+      <section class="video">
+        <h2 id="video">Video</h2>
+        <p>
+          Zde je ukázka vložení videa do html stránky. Video je poze použito jako příklad jak by mohlo být video vloženo.
+        </p>
+        <video poster="./images/waterfall.webp" controls preload="metadata">
+          <source src="./videos/Joren_Falls_Izu_Jap.webm" type="video/webm"/>
+          <source src="./videos/Joren_Falls_Izu_Jap.mp4" type="video/mp4"/>
+          <source src="./videos/Joren_Falls_Izu_Japan.ogv" type="video/ogg"/>
+          Your browser does not support the video tag.
+          </video>
       </section>
     </div>
   </main>
@@ -168,9 +190,9 @@
           46001
         </p>
         <p>
-          <b>email</b>:
+          <strong>email</strong>:
           <a href="mailto:jan.reisiegel@tul.cz">jan.reisiegel@tul.cz</a><br />
-          <b>telefon</b>: <a href="tel:+420774744222">+420 774 744 222</a>
+          <strong>telefon</strong>: <a href="tel:+420774744222">+420 774 744 222</a>
         </p>
       </div>
     </div>
