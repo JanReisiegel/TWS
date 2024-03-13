@@ -34,7 +34,6 @@ header {
   left: 0;
   width: 100%;
   height: auto;
-  padding: auto;
   background-color: #0b1117e6;
 }
 
@@ -133,7 +132,7 @@ footer {
 
 .social-icon {
   display: block;
-  background-repeat: no-repeat 50% 50%;
+  background-repeat: no-repeat;
   background-size: contain;
   flex-shrink: 0;
   width: 20px;
@@ -236,7 +235,7 @@ footer {
 
   .social-icon {
     display: block;
-    background-repeat: no-repeat 50% 50%;
+    background-repeat: no-repeat;
     background-size: contain;
     flex-shrink: 0;
     width: 20px;
@@ -379,7 +378,7 @@ footer {
 
   .social-icon {
     display: block;
-    background-repeat: no-repeat 50% 50%;
+    background-repeat: no-repeat;
     background-size: contain;
     flex-shrink: 0;
     width: 20px;
