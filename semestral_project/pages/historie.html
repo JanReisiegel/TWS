@@ -7,7 +7,7 @@
     <link rel="icon" href="../images/fmTUL.svg" type="image/svg" />
     <link rel="stylesheet" href="../styles/main.css" type="text/css" />
     <link rel="stylesheet" href="../styles/historie.css" type="text/css" />
-    <script src="./scripts/main.js" type="text/javascript"></script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
     <link
       rel="stylesheet"
       href="../styles/historie-table.css"
@@ -45,12 +45,12 @@
       <nav class="side-menu">
         <h2>Menu</h2>
         <ul>
-          <li><a href="#hadaikum">Hadaikum</a></li>
-          <li><a href="#archaikum">Archaikum</a></li>
-          <li><a href="#proterozoikum">Proterozoikum</a></li>
-          <li><a href="#paleozoikum">Paleozoikum</a></li>
-          <li><a href="#mezozoikum">Mezozoikum</a></li>
-          <li><a href="#kenozoikum">Kenozoikum</a></li>
+          <li><a href="#Hadaikum">Hadaikum</a></li>
+          <li><a href="#Archaikum">Archaikum</a></li>
+          <li><a href="#Proterozoikum">Proterozoikum</a></li>
+          <li><a href="#Paleozoikum">Paleozoikum</a></li>
+          <li><a href="#Mezozoikum">Mezozoikum</a></li>
+          <li><a href="#Kenozoikum">Kenozoikum</a></li>
           <li><a href="#gallery">Galerie</a></li>
           <li>
             <a href="#more">Doplnění</a>
@@ -64,7 +64,7 @@
       <div class="main-tema">
         <div class="content-text">
           <section>
-            <h2 id="hadaikum">Hadaikum</h2>
+            <h2 id="Hadaikum">Hadaikum</h2>
             <p>
               Hadaikum (Hadean, někdy Priscoan) je nejstarší období ve vývoji
               Země. Datuje se do období před 4,6 až 4 miliardami let. Pro toto
@@ -74,7 +74,7 @@
             </p>
           </section>
           <section>
-            <h2 id="archaikum">Archaikum</h2>
+            <h2 id="Archaikum">Archaikum</h2>
             <p>
               Archaikum (archeozoikum, prahory) je geologické období (eón) Země,
               které následovalo po hadaiku a předcházelo proterozoiku.
@@ -83,7 +83,7 @@
             </p>
           </section>
           <section>
-            <h2 id="proterozoikum">Proterozoikum</h2>
+            <h2 id="Proterozoikum">Proterozoikum</h2>
             <p>
               Proterozoikum (algonkium, starohory) označuje eon, který datujeme
               do období před 2,5 miliardami až 542 milióny let. V tomto období
@@ -106,7 +106,7 @@
             </p>
           </section>
           <section>
-            <h2 id="paleozoikum">Paleozoikum</h2>
+            <h2 id="Paleozoikum">Paleozoikum</h2>
             <p>
               Paleozoikum (z řec. paleos, starý a zóé, život), česky prvohory,
               je nejstarší ze tří geologických ér fanerozoika, nejmladšího eonu
@@ -123,7 +123,7 @@
             </p>
           </section>
           <section>
-            <h2 id="mezozoikum">Mezozoikum</h2>
+            <h2 id="Mezozoikum">Mezozoikum</h2>
             <p>
               Mezozoikum (druhohory) je geologické období přibližně před 252 až
               66 miliony let, které tvoří střední éru fanerozoika, nejmladšího
@@ -138,7 +138,7 @@
             </p>
           </section>
           <section>
-            <h2 id="kenozoikum">Kenozoikum</h2>
+            <h2 id="Kenozoikum">Kenozoikum</h2>
             <p>
               Kenozoikum (z řec. καινός kainos, nový, nedávný a ζωή zóé, život)
               je nejmladší geologická éra. Začala před 66,0 miliony let (± 0,1
@@ -251,64 +251,66 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th colspan="2" rowspan="2">Název</th>
-                  <td rowspan="2">Hadaikum</td>
-                  <td rowspan="2">Archaikum</td>
-                  <td rowspan="2">Proterozoikum</td>
-                  <td colspan="6">Paleozoikum</td>
-                  <td colspan="3">Mezozoikum</td>
-                  <td colspan="3">Kenozoikum</td>
+                  <th id="name" scope="row" colspan="2" rowspan="2">Název</th>
+                  <td id="hadai" rowspan="2">Hadaikum</td>
+                  <td id="archai" rowspan="2">Archaikum</td>
+                  <td id="proterozoi" rowspan="2">Proterozoikum</td>
+                  <td id="paleozoi" colspan="6">Paleozoikum</td>
+                  <td id="mezozoi" colspan="3">Mezozoikum</td>
+                  <td id="kenozoi" colspan="3">Kenozoikum</td>
                 </tr>
                 <tr>
-                  <td>Kambrium</td>
-                  <td>Ordovik</td>
-                  <td>Silur</td>
-                  <td>Devon</td>
-                  <td>Karbon</td>
-                  <td>Perm</td>
-                  <td>Trias</td>
-                  <td>Jura</td>
-                  <td>Křída</td>
-                  <td>Paleogén</td>
-                  <td>Neogén</td>
-                  <td>Kvartér</td>
+                  <td id="kambrium">Kambrium</td>
+                  <td id="ordovik">Ordovik</td>
+                  <td id="silur">Silur</td>
+                  <td id="devon">Devon</td>
+                  <td id="karbon">Karbon</td>
+                  <td id="perm">Perm</td>
+                  <td id="trias">Trias</td>
+                  <td id="jura">Jura</td>
+                  <td id="krida">Křída</td>
+                  <td id="paleogen">Paleogén</td>
+                  <td id="neogen">Neogén</td>
+                  <td id="kvarter">Kvartér</td>
                 </tr>
                 <tr>
-                  <th colspan="2">Miliony let</th>
-                  <td>4600-4000</td>
-                  <td>4000-2500</td>
-                  <td>2500-541</td>
-                  <td>541-485</td>
-                  <td>485-443</td>
-                  <td>443-419</td>
-                  <td>419-359</td>
-                  <td>359-299</td>
-                  <td>299-252</td>
-                  <td>252-201</td>
-                  <td>201-145</td>
-                  <td>145-66</td>
-                  <td>66-23</td>
-                  <td>23-3</td>
-                  <td>3-0</td>
+                  <th id="years" scope="row" colspan="2">Miliony let</th>
+                  <td headers="years">4600-4000</td>
+                  <td headers="years">4000-2500</td>
+                  <td headers="years">2500-541</td>
+                  <td headers="years">541-485</td>
+                  <td headers="years">485-443</td>
+                  <td headers="years">443-419</td>
+                  <td headers="years">419-359</td>
+                  <td headers="years">359-299</td>
+                  <td headers="years">299-252</td>
+                  <td headers="years">252-201</td>
+                  <td headers="years">201-145</td>
+                  <td headers="years">145-66</td>
+                  <td headers="years">66-23</td>
+                  <td headers="years">23-3</td>
+                  <td headers="years">3-0</td>
                 </tr>
               </thead>
               <tbody class="animals">
                 <tr>
-                  <th rowspan="3">Existující skupiny živočichů</th>
-                  <th>Ptáci</th>
+                  <th id="animals" scope="row" rowspan="3">
+                    Existující skupiny živočichů
+                  </th>
+                  <th id="birds" scope="row">Ptáci</th>
                   <td colspan="10"></td>
                   <td colspan="5" class="aves">Aves</td>
                 </tr>
                 <tr>
-                  <th>Dinosauři</th>
+                  <th id="dino" scope="row">Dinosauři</th>
                   <td colspan="9"></td>
                   <td colspan="3" class="dino">Dinosauria</td>
                   <td colspan="3"></td>
                 </tr>
                 <tr>
-                  <th>Savci</th>
+                  <th id="savci" scope="row">Savci</th>
                   <td colspan="10"></td>
-                  <td colspan="5" class="mamm">Mammalia</td>
+                  <td colspan="5" class="mamm">n Mammalia</td>
                 </tr>
               </tbody>
             </table>
@@ -376,7 +378,16 @@
       <div class="copyright">
         <p>
           &copy; 2018 - <span id="footer-year"></span> Jan Reisiegel |
-          <a href="jan.reisiegel.eu/about-me/">jan.reisiegel.eu</a>
+          <a href="jan.reisiegel.eu/about-me/">jan.reisiegel.eu</a> |
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstuwrk.nti.tul.cz%2F%7Ejan.reisiegel%2Fsp%2Fpages%2Fhistorie.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=cs"
+            >CSS3</a
+          >
+          |
+          <a
+            href="https://achecks.org/achecker#wcag2aa,http://stuwrk.nti.tul.cz/~jan.reisiegel/sp/historie.html"
+            >WCAG2.0</a
+          >
         </p>
       </div>
     </footer>

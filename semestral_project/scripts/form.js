@@ -76,11 +76,13 @@ class Form {
     let password = document.getElementById("signPassword").value;
     let fullName = document.getElementById("fullName").value;
     let phoneNumber = document.getElementById("phoneNumber").value;
+    let birthDate = document.getElementById("birthDate").value;
     let hashedPassword = btoa(password);
     let userInformation = {
       email: email,
       password: hashedPassword,
       fullName: fullName,
+      birthDate: birthDate,
       phoneNumber: phoneNumber,
     };
     console.log(userInformation);

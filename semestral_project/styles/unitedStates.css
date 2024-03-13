@@ -74,6 +74,16 @@ section > figure > figcaption {
 .usa-best {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.biggest-cities {
+  flex-basis: 25%;
+  margin: 0;
+}
+.famous-bridges {
+  flex-basis: 75%;
+  margin: 0;
 }
 .famous-bridges dt {
   padding: 0.2rem;
@@ -84,10 +94,6 @@ section > figure > figcaption {
 }
 .biggest-cities {
   padding: 0.2rem;
-}
-
-.biggest-cities h3 {
-  text-wrap: nowrap;
 }
 
 .biggest-cities ol,
