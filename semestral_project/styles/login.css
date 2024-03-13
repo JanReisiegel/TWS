@@ -40,6 +40,10 @@ form.login {
   width: 100%;
 }
 
+label span {
+  display: none;
+}
+
 .card-signup {
   width: 100%;
   height: 100%;
@@ -153,6 +157,7 @@ main>h3 {
 }
 
 .slider {
+  display: block;
   position: absolute;
   cursor: pointer;
   top: 0;
