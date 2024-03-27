@@ -1,140 +1,228 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jan Reisiegel" />
+    <meta name="viewport" content="viewport=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/fmTUL.svg" type="image/svg" />
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/login.css" type="text/css" />
+    <script src="../scripts/main.js" type="text/javascript"></script>
+    <script src="../scripts/form.js"></script>
+    <title>SP | Dotazník</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Jan Reisiegel" />
-  <meta name="viewport" content="viewport=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../images/fmTUL.svg" type="image/svg" />
-  <link rel="stylesheet" href="../styles/main.css" type="text/css" />
-  <link rel="stylesheet" href="../styles/login.css" type="text/css" />
-  <script src="./scripts/main.js" type="text/javascript"></script>
-  <script src="../scripts/form.js"></script>
-  <title>SP | Dotazník</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <h1>Semestrální projekt</h1>
-      <ul class="navigation">
-        <li class="nav_item">
-          <a href="../index.html" class="navbar-a">Home</a>
-        </li>
-        <li class="nav_item">
-          <a href="./unitedStates.html" class="navbar-a">USA</a>
-        </li>
-        <li class="nav_item">
-          <a href="./historie.html" class="navbar-a">Historie</a>
-        </li>
-        <li class="nav_item">
-          <a href="./login.html?type=login" id="navLog" class="navbar-a">Přihlásit se</a>
-        </li>
-        <li class="nav_item" id="signup">
-          <a href="./login.html?type=signup" id="navSign" class="navbar-a">
-            Registrovat se
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>
-      Přihlásit se
-      <label class="switch" for="form-type">
-        <input type="checkbox" name="form-type" id="form-type" class="checkbox" />
-        <span class="slider"></span>
-      </label>
-      Registrovat se
-    </h2>
-
-    <div class="card">
-      <div class="card-login" id="card-login">
-        <h3>Přihlášení</h3>
-        <form class="login">
-          <fieldset>
-            <input type="email" id="logEmail" name="logEmail" placeholder="Email" />
-            <label for="logEmail" class="email icon"></label>
-          </fieldset>
-          <fieldset>
-            <input type="password" id="logPassword" name="logPassword" placeholder="Heslo" />
-            <label for="logPassword" class="password icon"></label>
-          </fieldset>
-          <input class="button" id="loginButton" type="button" value="Login" />
-          <p>
-            <a href="./forgotPassword.html">Zapomenuté heslo?</a>
-          </p>
-        </form>
-      </div>
-      <div class="card-signup" id="card-signup">
-        <form class="signup">
-          <h3>Registrace</h3>
-          <fieldset>
-            <input type="text" id="fullName" name="fullName" placeholder="Celé jméno" />
-            <label for="fullName" class="user icon"></label>
-          </fieldset>
-          <fieldset>
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Telefonní číslo" />
-            <label for="phoneNumber" class="phone icon"></label>
-          </fieldset>
-          <fieldset>
-            <input type="email" id="signEmail" name="signEmail" placeholder="Email" />
-            <label for="signEmail" class="email icon"></label>
-          </fieldset>
-          <fieldset>
-            <input type="password" id="signPassword" name="signPassword" placeholder="Heslo" />
-            <label for="signPassword" class="password icon"><span>HAkkj</span></label>
-          </fieldset>
-          <input class="button" id="signupButton" type="button" value="Register" />
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer">
-      <div class="pages">
-        <strong>Stránky</strong>
-        <ul class="footer-list">
-          <li>
-            <a href="../index.html" class="footer-a">Home</a>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Semestrální projekt</h1>
+        <ul class="navigation">
+          <li class="nav_item">
+            <a href="../index.html" class="navbar-a">Home</a>
           </li>
-          <li>
-            <a href="./historie.html" class="footer-a">Historie</a>
+          <li class="nav_item">
+            <a href="./unitedStates.html" class="navbar-a">USA</a>
           </li>
-          <li>
-            <a href="./unitedStates.html" class="footer-a">USA</a>
+          <li class="nav_item">
+            <a href="./historie.html" class="navbar-a">Historie</a>
           </li>
-          <li>
-            <a href="./login.html?type=login" class="footer-a">Přihlásit se</a>
+          <li class="nav_item">
+            <a href="./login.html?type=login" id="navLog" class="navbar-a"
+              >Přihlásit se</a
+            >
+          </li>
+          <li class="nav_item" id="signup">
+            <a href="./login.html?type=signup" id="navSign" class="navbar-a">
+              Registrovat se
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="social">
-        <strong>Sociální sítě</strong>
-        <a href="https://www.facebook.com/profile.php?id=100010342208933" class="footer-a">
-          <span class="facebook-icon social-icon"></span>
-          <p class="social-text">Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/janreisiegel/" class="footer-a">
-          <span class="instagram-icon social-icon"></span>
-          <p class="social-text">Instagram</p>
-        </a>
-        <a href="https://discordapp.com/users/638395613771464708" class="footer-a">
-          <span class="discord-icon social-icon"></span>
-          <p class="social-text">Discord</p>
-        </a>
-      </div>
-      <div class="contact">
-        <strong>Kontakt</strong>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>
-        &copy; 2018 - <span id="footer-year"></span> Jan Reisiegel |
-        <a href="jan.reisiegel.eu/about-me/">jan.reisiegel.eu</a>
-      </p>
-    </div>
-  </footer>
-</body>
+      </nav>
+    </header>
+    <main>
+      <h2>
+        Přihlásit se
+        <label class="switch" for="form-type">
+          <input
+            type="checkbox"
+            name="form-type"
+            id="form-type"
+            class="checkbox"
+          />
+          <span class="slider"><span>Switch</span></span>
+        </label>
+        Registrovat se
+      </h2>
 
+      <div class="card">
+        <div class="card-login" id="card-login">
+          <h3>Přihlášení</h3>
+          <form class="login">
+            <fieldset>
+              <input
+                type="email"
+                id="logEmail"
+                name="logEmail"
+                placeholder="Email"
+              />
+              <label for="logEmail" class="email icon"
+                ><span>Email</span></label
+              >
+            </fieldset>
+            <fieldset>
+              <input
+                type="password"
+                id="logPassword"
+                name="logPassword"
+                placeholder="Heslo"
+              />
+              <label for="logPassword" class="password icon"
+                ><span>Heslo</span></label
+              >
+            </fieldset>
+            <button class="button" id="loginButton" type="button">Login</button>
+            <p>
+              <a href="./forgotPassword.html">Zapomenuté heslo?</a>
+            </p>
+          </form>
+        </div>
+        <div class="card-signup" id="card-signup">
+          <form class="signup">
+            <h3>Registrace</h3>
+            <fieldset>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Celé jméno"
+              />
+              <label for="fullName" class="user icon"
+                ><span>Celé jméno</span></label
+              >
+            </fieldset>
+            <fieldset>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Telefonní číslo"
+              />
+              <label for="phoneNumber" class="phone icon"
+                ><span>Telefonní číslo</span></label
+              >
+            </fieldset>
+            <fieldset>
+              <input type="date" id="birthDate" name="birthDate" />
+              <label for="birthDate" class="date icon"
+                ><span>Datum narození</span></label
+              >
+            </fieldset>
+            <fieldset>
+              <input
+                type="email"
+                id="signEmail"
+                name="signEmail"
+                placeholder="Email"
+              />
+              <label for="signEmail" class="email icon"
+                ><span>Email</span></label
+              >
+            </fieldset>
+            <fieldset>
+              <input
+                type="password"
+                id="signPassword"
+                name="signPassword"
+                placeholder="Heslo"
+              />
+              <label for="signPassword" class="password icon"
+                ><span>Heslo</span></label
+              >
+            </fieldset>
+            <button class="button" id="signupButton" type="button">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="pages">
+          <strong>Stránky</strong>
+          <ul class="footer-list">
+            <li>
+              <a href="../index.html" class="footer-a">Home</a>
+            </li>
+            <li>
+              <a href="./historie.html" class="footer-a">Historie</a>
+            </li>
+            <li>
+              <a href="./unitedStates.html" class="footer-a">USA</a>
+            </li>
+            <li>
+              <a href="./login.html?type=login" class="footer-a"
+                >Přihlásit se</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <strong>Sociální sítě</strong>
+          <a
+            href="https://www.facebook.com/profile.php?id=100010342208933"
+            class="footer-a"
+          >
+            <span class="facebook-icon social-icon"></span>
+            <p class="social-text">Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/janreisiegel/" class="footer-a">
+            <span class="instagram-icon social-icon"></span>
+            <p class="social-text">Instagram</p>
+          </a>
+          <a
+            href="https://discordapp.com/users/638395613771464708"
+            class="footer-a"
+          >
+            <span class="discord-icon social-icon"></span>
+            <p class="social-text">Discord</p>
+          </a>
+        </div>
+        <div class="contact">
+          <strong>Kontakt</strong>
+          <p>
+            Jan Reisiegel<br />
+            Výletní 244, Liberec 32 <br />
+            46001
+          </p>
+          <p>
+            <strong>email</strong>:
+            <a href="mailto:jan.reisiegel@tul.cz">jan.reisiegel@tul.cz</a><br />
+            <strong>telefon</strong>:
+            <a href="tel:+420774744222">+420 774 744 222</a>
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2018 - <span id="footer-year"></span> Jan Reisiegel |
+          <a href="jan.reisiegel.eu/about-me/">jan.reisiegel.eu</a> |
+          <a
+            href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fstuwrk.nti.tul.cz%2F%7Ejan.reisiegel%2Fsp%2Fpages%2Flogin.html"
+            >HTML5</a
+          >
+          |
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstuwrk.nti.tul.cz%2F%7Ejan.reisiegel%2Fsp%2Fpages%2Flogin.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=cs"
+            >CSS3</a
+          >
+          |
+          <a
+            href="https://achecks.org/achecker#wcag2aa,http://stuwrk.nti.tul.cz/~jan.reisiegel/sp/login.html"
+            >WCAG2.0</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
