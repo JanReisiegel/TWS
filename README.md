@@ -8,9 +8,9 @@
       Alternativou je single-page web s vizuální separací 4 tematických celků pomocí CSS.
       Používejte pouze HTML a CSS bez preprocesorů, postprocesorů, frameworků ...
       Odkaz na validaci každého HTML dokumentu umístěte do zápatí stránek nebo stránky.
-- [ ] HTML doplňte o samostatný CSS předpis validní podle CSS3.
+- [x] HTML doplňte o samostatný CSS předpis validní podle CSS3.
       Odkaz na validaci CSS umístěte do zápatí stránek nebo stránky.
-- [ ] Stránky musí obsahovat následující elementy:
+- [x] Stránky musí obsahovat následující elementy:
   - [x] oddělené záhlaví, zápatí menu a obsah, vytvořené pomocí sémantických elementů HTML5
   - [x] menu vytvořené pomocí seznamu s příslušným stylem,
   - [x] odstavce a nadpisy 1 - 3 úrovně,
@@ -21,7 +21,7 @@
   - [x] formulář obsahující minimálně 3 viditelné elementy, využívající fieldset, legend a label,
 - [x] V CSS nastavte níže uvedené vlastnosti pro výše uvedené elementy. Barevné schéma musí byt dostatečně kontrastní pro ergonomické použití.
   - [x] barva písma a pozadí, font a velikost písma
-  - [ ] nastavení chování odkazů (navštívený, aktivní, ...)
+  - [x] nastavení chování odkazů (navštívený, aktivní, ...)
         nadpisy
   - [x] layout pomocí flex nebo grid
 - [x] CSS předpisem bude zajistěte responzivní chování stránky ve dvou úrovních
